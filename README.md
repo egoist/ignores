@@ -13,7 +13,7 @@ $ npm install --save ignores
 ```js
 const ignores = require('ignores')
 
-ignores(['node', 'osx'])
+ignores(['node', 'osx']).then(data => console.log(data))
 ```
 
 ## License

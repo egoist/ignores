@@ -13,7 +13,7 @@
     "node": ">=4"
   },
   "scripts": {
-    "test": "xo && ava",
+    "test": "npm run postinstall && xo && ava",
     "postinstall": "node ./postinstall.js"
   },
   "keywords": [
