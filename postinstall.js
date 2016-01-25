@@ -20,7 +20,7 @@ co(function* () {
  * Global gitignores
  */
 co(function* () {
-	const dir = './gitignore/global'
+	const dir = './gitignore/Global'
 	let names = yield pify(fs.readdir)(dir)
 	names = names.filter(n => n.indexOf('.gitignore') > -1)
 	yield pify(fs.writeFile)('gitignoresGlobal.json', JSON.stringify(names, null, 2), 'utf8')

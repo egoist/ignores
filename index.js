@@ -16,7 +16,7 @@ module.exports = co.wrap(function* (names) {
 	/**
 	 * Find gitignores
 	 */
-	const gitignores = gitignoresLocal.concat(gitignoresGlobal.map(gi => `global/${gi}`))
+	const gitignores = gitignoresLocal.concat(gitignoresGlobal.map(gi => `Global/${gi}`))
 	for (let name of names) {
 		for (let gi of gitignores) {
 			if (gi.toLowerCase().indexOf(name) > -1) {
